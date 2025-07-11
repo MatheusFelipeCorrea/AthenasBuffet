@@ -1,0 +1,35 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Atenas Buffet
+authors:
+  - family-names: Moreira da Silva
+    given-names: Diogo Henrique 
+  - family-names: Campos Sigaud
+    given-names: Débora
+  - family-names: Aparecida de Paula Pereira
+    given-names: Lorena 
+  - family-names: Felipe Correa da Silva
+    given-names: Matheus
+  - family-names: Pierre da Silva Ramiro
+    given-names: Rayssa
+  - family-names: Vasconcelos Moreira e Silva
+    given-names: Sofia
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Alonso Veloso
+    given-names: Eveline 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Baroni de Carvalho
+    given-names: Juliana Amaral 
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Norberta de Brito
+    given-names: Aline
+    
+keywords:
+    - Buffet
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-atenasbuffet/
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-12-09
