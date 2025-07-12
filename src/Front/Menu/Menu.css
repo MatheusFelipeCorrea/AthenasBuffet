@@ -1,0 +1,223 @@
+/* Geral */
+body {
+    background-color: #e6e6e6; /* Um tom neutro para contraste */
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333333; /* Texto com boa legibilidade */
+    overflow: hidden;
+  }
+  
+  /* Container do formulário */
+  .form-container {
+    background-color: #1a1a2e; /* Um azul escuro elegante */
+    color: #eac67a; /* Dourado para destacar o texto */
+    padding: 30px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .form-logo img {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  /* Título */
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Container com barra de rolagem */
+  .scrollable-container {
+    overflow-y: auto;
+    max-height: 70vh;
+    width: 100%;
+    padding-right: 8px;
+  }
+  
+  /* Estilo personalizado para a barra de rolagem */
+  .scrollable-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-track {
+    background-color: #2f2f3f;
+    border-radius: 10px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #eac67a;
+    border-radius: 10px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb:hover {
+    background-color: #cfaa5c;
+  }
+  
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Grupos de campos */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .half-width {
+    flex: 1;
+  }
+  
+  /* Rótulos */
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #eac67a;
+    text-align: left;
+  }
+  
+  /* Ajustando todos os campos para o mesmo tamanho */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+  background-color: #1a1a2e; /* Fundo consistente */
+  border: 1px solid #eac67a; /* Borda no mesmo estilo */
+  border-radius: 15px; /* Bordas arredondadas */
+  color: #eac67a; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  width: 100%; /* Ocupa toda a largura */
+  height: 50px; /* Altura consistente */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+  outline: none; /* Remove a borda de foco padrão */
+  font-size: 14px; /* Tamanho do texto */
+  resize: none; /* Remove redimensionamento para textarea */
+}
+
+textarea {
+  height: 80px; /* Altura específica para o campo de observações */
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #eac67a;
+  opacity: 0.8; /* Placeholder mais sutil */
+}
+
+/* Foco nos campos */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #cfaa5c; /* Borda ao focar */
+  box-shadow: 0 0 5px rgba(207, 170, 92, 0.5); /* Destaque ao focar */
+}
+  
+  input[type="text"]::placeholder {
+    color: #eac67a;
+    opacity: 0.8;
+  }
+  
+  /* Campos de rádio */
+  .radio-group label {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .radio-group input[type="radio"] {
+    accent-color: #eac67a;
+    margin-right: 8px;
+  }
+  
+  /* Botão de envio */
+  button[type="submit"] {
+    background-color: #eac67a;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cfaa5c;
+    color: #ffffff;
+  }
+  
+  /* Estilos para alinhar os checkboxes de "Outros Serviços" na horizontal */
+  .horizontal-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .horizontal-options label {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  /* Espaçamento entre grupos */
+  .form-group + .form-group {
+    margin-top: 20px;
+  }
+  
+  /* Ajuste responsivo */
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    button[type="submit"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+/* Campo de texto Observações */
+textarea {
+  background-color: #1a1a2e; /* Fundo consistente com os outros campos */
+  border: 1px solid #eac67a; /* Borda no mesmo estilo */
+  border-radius: 15px; /* Bordas arredondadas */
+  color: #eac67a; /* Texto na mesma cor */
+  padding: 10px; /* Espaçamento interno */
+  width: 100%; /* Ocupa toda a largura */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+  outline: none; /* Remove a borda de foco padrão */
+  font-size: 14px; /* Tamanho do texto consistente */
+  resize: none; /* Remove a possibilidade de redimensionar o campo */
+}
+
+textarea::placeholder {
+  color: #eac67a; /* Placeholder com opacidade harmoniosa */
+  opacity: 0.8; /* Menos visível que o texto */
+}
+
+/* Para maior consistência ao passar o mouse ou focar */
+textarea:focus {
+  border-color: #cfaa5c; /* Muda a borda ao focar */
+  box-shadow: 0 0 5px rgba(207, 170, 92, 0.5); /* Adiciona leve destaque */
+}
+  

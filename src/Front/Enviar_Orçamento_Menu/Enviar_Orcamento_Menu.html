@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atenas Buffet - Orçamentos</title>
+  <link rel="stylesheet" href="Enviar_Orcamento_Menu.css">
+  <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+
+  <div class="header">
+    <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="logo">
+    <h1>Bem Vindo(a)!</h1>
+    <p>Envie os orçamentos coletados para os seus clientes!</p>
+  </div>
+
+  <div class="form-container">
+    <form id="budgetForm">
+      <h2>INFORMAÇÕES DO CLIENTE</h2>
+      <input type="text" id="nomeCliente" placeholder="Nome Completo*" required>
+      <input type="text" id="cpfCliente" placeholder="CPF*" required>
+
+      <h2>INFORMAÇÕES DO RESTAURANTE</h2>
+      <input type="text" id="nomeRestaurante" placeholder="Nome do Restaurante*" required>
+      <input type="text" id="cnpjRestaurante" placeholder="CNPJ*" required>
+      <input type="text" id="cepRestaurante" placeholder="CEP*" required>
+      <input type="text" id="ruaRestaurante" placeholder="Rua*" required>
+      <input type="text" id="numeroRestaurante" placeholder="Número*" required>
+      <input type="text" id="telefoneRestaurante" placeholder="Telefone*" required>
+      <input type="text" id="precoRestaurante" placeholder="Preço*" required>
+
+
+      <button type="submit">ADICIONAR</button>
+    </form>
+    <div id="message" class="message" style="display: none;">
+      Formulário enviado com sucesso!
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Athenas" class="footer-logo">
+        <div class="footer-icons">
+          <a href="#" class="icon-button"><img src="../Img/Home/whatsapp.svg" alt="WhatsApp" class="icon"></a>
+          <a href="#" class="icon-button"><img src="../Img/Home/mail.svg" alt="Email" class="icon"></a>
+          <a href="https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-atenasbuffet/tree/main" class="icon-button"><img src="../Img/Home/github (2).svg" alt="Github" class="icon"></a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <h2>Pronto para o Evento dos</h2>
+        <h2> seus Sonhos?</h2>
+        <p class="frase">Entre em contato e deixe-nos transformar</p>
+        <p class="frase"> seu evento em uma realidade!</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="#sobre">Sobre o Athenas</a></li>
+          <li><a href="#servicos">Nossos Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="Enviar_Orcamento_Menu.js"></script>
+
+  
+</body>
+</html>

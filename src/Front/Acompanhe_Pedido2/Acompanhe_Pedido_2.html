@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenas Buffet - Acompanhe seus Pedidos</title>
+    <link rel="stylesheet" href="Acompanhe_Pedido_2.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+    <header class="header">
+        <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas Buffet" class="logo">
+        <h1>Bem-vindo(a)!</h1>
+        <p>Acompanhe os seus pedidos!</p>
+    </header>
+    
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Pesquisar...">
+        <button onclick="search()">🔍</button>
+    </div>
+
+    <div class="novo-evento-container">
+        <button class="novo-evento-btn" onclick="window.location.href='../Selecionar_Buffet/seleçao.html'">Novo Evento</button>
+    </div>
+
+    <div id="eventosContainer" class="result">
+        <!-- Os eventos e seus respectivos orçamentos serão renderizados aqui -->
+    </div>
+
+    <script src="Acompanhe_Pedido_2.js"></script>
+</body>
+</html>

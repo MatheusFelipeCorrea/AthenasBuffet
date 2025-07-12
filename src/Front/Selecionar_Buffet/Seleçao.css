@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar-custom {
+    background-color: #12243A !important; /* Cor de fundo da navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.Inicio {
+    background-color: #DCC291;
+    padding: 50px 0;
+    margin-bottom: 20px;
+  }
+  
+  .Inicio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #12243A;
+    font-family: Amandine;
+    font-size: 50px;
+    font-style: bold;
+    text-align: center;
+  }
+  
+  .Inicio blockquote {
+    font-size: 1.2em;
+    color: white;
+    font-family: Cocogoose, sans-serif; /* Use a fonte que preferir */
+    margin-top: -50px;
+    text-align: center;
+
+  }
+  .depoimento {
+    color: white;
+    border-left: 5px solid #12243A;
+    padding-left: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+
+
+.depoimentos {
+    background-color: #DCC291;
+    padding: 50px 0;
+  }
+
+/* Barra de Pesquisa */
+
+.search-bar {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #12243A; /* Contorno da barra */
+    border-radius: 30px; /* Contorno arredondado */
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 90%;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+
+/* Estilo dos Cards */
+.buffet-card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    width: 200px; /* Tamanho reduzido do card */
+    cursor: pointer;
+}
+
+.buffet-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.buffet-card.selected {
+    border-color: #1f355e;
+    box-shadow: 0px 0px 10px rgba(31, 53, 94, 0.5);
+    transform: scale(1.05);
+}
+
+
+.buffet-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.buffet-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buffet-info h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+
+.buffet-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buffet-details p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+
+.btn-Mais {
+    font-family: 'Amandine', sans-serif;
+    font-size: 16px; /* Tamanho do texto ajustado */
+    background-color: #fff;
+    color: #1f355e;
+    border: 2px solid #1f355e;
+    border-radius: 30px; /* Aumentar o border-radius para deixar as bordas mais arredondadas */
+    padding: 10px 20px; /* Ajustar padding para centralizar o texto */
+    display: inline-block; /* Ajusta o tamanho do botão ao texto */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombras sutis */
+    transition: 0.3s ease;
+    text-shadow: none; /* Remover sombra do texto para um visual mais limpo */
+    margin-bottom: 30px;
+    width: auto; /* Largura ajustada automaticamente */
+    height: auto;
+    text-align: center;
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente, se necessário */
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+
+
+
+.btn-Mais:hover {
+    background-color: #1f355e;
+    color: #fff;
+}
+
+
+
+/*Footer*/
+/* Estilos para o footer */
+footer {
+    background-color: #12243A;
+    padding: 20px 0;
+    color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+  
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-left, .footer-center, .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: 55px;
+}
+  
+/* Estilo dos botões com ícones */
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+  
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5; /* Fundo claro para contraste */
+    border-radius: 20px; /* Borda arredondada */
+    transition: background-color 0.3s ease;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+
+/* Hover personalizado para cada ícone */
+.icon-button:nth-child(1):hover {
+    background-color: #25D366; /* Cor para o primeiro botão (WhatsApp) */
+}
+
+.icon-button:nth-child(2):hover {
+    background-color: #ED3030; /* Cor para o segundo botão (Email) */
+}
+
+.icon-button:nth-child(3):hover {
+    background-color: #7E36F4; /* Cor para o terceiro botão (Github) */
+}
+  
+.icon {
+    width: 32px; /* Tamanho do ícone dentro do botão */
+    height: 32px;
+    transition: filter 0.3s ease; /* Transição suave para o efeito de cor */
+}
+
+/* Apenas o ícone (símbolo) fica branco no hover */
+.icon-button:hover .icon {
+    filter: brightness(0) invert(1); /* Transforma a cor do ícone em branco */
+}
+
+.footer-center h2 {
+    color: #c59d6d;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: Amandine, sans-serif;
+    margin-left: -90px;
+}
+  
+.footer-center p {
+    color: #f5f5f5;
+    font-size: 16px;
+    font-family: Cocogoose, sans-serif;
+    margin-left: -90px;
+    ;
+}
+.frase{
+    margin: 0;
+}
+  
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 90px;
+    font-family: Amandine, sans-serif;
+}
+  
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+  
+.footer-right ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.footer-right ul li a:hover {
+    color: #c59d6d;
+}

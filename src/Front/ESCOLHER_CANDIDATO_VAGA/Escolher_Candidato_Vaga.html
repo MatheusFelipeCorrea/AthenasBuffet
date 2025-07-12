@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenas Buffet</title>
+    <link rel="stylesheet" href="Escolher_Candidato_Vaga.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="logo">
+            <h1>Bem Vindo(a)!</h1>
+            <p>Acompanhe os seus pedidos!</p>
+        </header>
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Digite o nome">
+            <button onclick="searchCandidate()">🔍</button>
+        </div>
+        
+        <div class="results" id="results">
+            <div class="card" id="candidateCard">
+                <h3>Vagas para Candidatos</h3>
+                <p><span>Nome:</span> Davi</p>
+                <p><span>Cargo:</span> Garçom</p>
+                <p><span>Idade:</span> 18 anos</p>
+                <button onclick="approveCandidate(this)">Aprovar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Escolher_Candidato_Vaga.js"></script>
+</body>
+</html>

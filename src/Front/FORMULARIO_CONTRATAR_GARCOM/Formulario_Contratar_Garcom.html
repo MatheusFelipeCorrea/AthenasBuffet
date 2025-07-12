@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contratação de Garçom</title>
+    <link rel="stylesheet" href="Formulario_Contratar_Garcom.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../Img/Athenas Buffet Logo.svg" alt="Atenas Logo" class="logo">
+            <h1>Formulário de contratação de garçom</h1>
+        </header>
+
+        <section class="form-section">
+            <div class="section-header">Informações do Contratante</div>
+            <div class="input-grid">
+                <input type="text" placeholder="Nome do Restaurante*" required>
+                <input type="text" placeholder="CNPJ*" required>
+                <input type="text" placeholder="CEP*" required>
+                <input type="text" placeholder="Bairro*" required>
+                <input type="email" placeholder="Email para Contato" required>
+                <input type="text" placeholder="Telefone para Contato" required>
+                <input type="text" placeholder="Rua*" required>
+                <input type="text" placeholder="Número*" required>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="section-header">Informações da Vaga</div>
+            <div class="input-grid">
+                <input type="text" placeholder="Idade Mínima" required>
+                <input type="text" placeholder="Cargo" required>
+                <textarea placeholder="Descrição da Vaga de Emprego" class="text-box"></textarea>
+                <textarea placeholder="Experiência Prévia" class="text-box"></textarea>
+                <textarea placeholder="Qualificações Procuradas" class="text-box"></textarea>
+                <textarea placeholder="Habilidades Exigidas" class="text-box"></textarea>
+                <textarea placeholder="Atuação" class="text-box"></textarea>
+                <textarea placeholder="Jornada de Trabalho" class="text-box"></textarea>
+                <input type="text" placeholder="Salário" required>
+                <textarea placeholder="Benefícios" class="text-box"></textarea>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="section-header">Local de Trabalho</div>
+            <div class="input-grid">
+                <input type="text" placeholder="CEP*" required>
+                <input type="text" placeholder="Bairro*" required>
+                <input type="text" placeholder="Rua*" required>
+                <input type="text" placeholder="Número*" required>
+            </div>
+        </section>
+
+        <button class="submit-btn" onclick="publicarVaga()">Publicar Vaga</button>
+    </div>
+
+    <script src="Formulario_Contratar_Garcom.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenas Buffet - Acompanhe seus pedidos</title>
+    <link rel="stylesheet" href="AcompanheGarcom.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+    <header>
+        <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="logo">
+        <h1>Bem Vindo(a)!</h1>
+    </header>
+    
+    <div class="content">
+        <div class="search-and-form">
+            <div class="search-section">
+                <input type="text" id="searchBar" placeholder="Davi">
+                <button onclick="search()">🔍</button>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="formOption" onclick="showForm('candidatos')"> Vagas Disponiveis  
+                    </label>
+                    <label>
+                        <input type="radio" name="formOption" onclick="showForm('event')"> Candidaturas
+                    </label>
+                </div>
+            </div>
+
+            <div id="forCandidatura" class="form-box hidden">
+                <h2>Formulário de Evento</h2>
+                <p><strong>Cliente:</strong> Davi</p>
+                <p><strong>Horário:</strong> 20:00</p>
+                <p><strong>Data:</strong> 00/00/0000</p>
+                <p><strong>Tipo:</strong> Formatura</p>
+                <p><strong>CEP:</strong> 00000-000</p>
+                <p><strong>Duração:</strong> 5 Horas</p>
+                <p><strong>Convidados:</strong> 100 convidados</p>
+            </div>
+
+            <div id="formVagas" class="form-box hidden">
+                
+            </div>
+
+            <div id="formCandidatos" class="form-box hidden">
+                <div id="candidatosContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="footer-logo">
+        <p>Pronto para o Evento dos Seus Sonhos?</p>
+        <p>Entre em contato e deixe-nos transformar seu momento em uma celebração inesquecível!</p>
+        <div class="footer-links">
+            <a href="#">Sobre o Athenas</a>
+            <a href="#">Nossos Serviços</a>
+            <a href="#">Depoimento</a>
+        </div>
+    </footer>
+
+    <script src="AcompanheGarcom.js"></script>
+</body>
+</html>

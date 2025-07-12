@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login - Atenas</title>
+    <link rel="stylesheet" href="../Login/Login.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="container">
+        <!-- Formulário de Cadastro -->
+        <div class="form-container sign-up-container">
+            <form class="form">
+                <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Athenas Buffet" class="logo" width="120px" height="120px"> <!-- Verifique se o caminho está correto -->
+                <h1>Criar sua conta</h1>
+                <div class="d-flex justify-content-center mb-3">
+                    <label class="me-3"><input type="radio" name="identificador" value="Cliente" checked> Cliente</label>
+                    <label class="me-3"><input type="radio" name="identificador" value="Buffet"> Buffet</label>
+                    <!--perdi meia hora pq algum vagabundo inventou a ç --> 
+                    <label><input type="radio" name="identificador" value="Garcom"> Garçom</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Senha" required>
+                </div>
+                <div class="mb-3 d-flex">
+                    <input type="text" id="cpf" class="form-control me-2" placeholder="CPF" required>
+                    <input type="text" class="form-control" placeholder="CEP" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Rua" required>
+                </div>
+                <div class="mb-3 d-flex">
+                    <input type="text" class="form-control me-2" placeholder="Número" required>
+                    <input type="text" class="form-control" placeholder="Complemento">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Telefone" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Bairro" required>
+                </div>
+                <button class="btn w-100" style="background-color: #9F8159; color: white;">Registre-se</button>
+                <p class="mt-3">Já tem login? <a href="#" id="signIn" style="color: white">Clique aqui</a></p>
+            </form>
+        </div>
+
+        <!-- Formulário de Login -->
+        <div class="form-container sign-in-container">
+            <form class="form">
+                <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Athenas Buffet" class="logo" width="120px" height="120px">
+                <h1>Entrar na conta</h1>
+                <div class="d-flex justify-content-center mb-3">
+                    <label class="me-3"><input type="radio" name="identificador" value="Cliente" checked> Cliente</label>
+                    <label class="me-3"><input type="radio" name="identificador" value="Buffet"> Buffet</label>
+                    <!--eu ter esquecido disso talvez prove que o imbecil sou eu, nao o cara que fez o ç--> 
+                    <label><input type="radio" name="identificador" value="Garcom"> Garçom</label>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Senha" required>
+                </div>
+                <button class="btn w-100" style="background-color: #9F8159; color: white;">Entrar</button>
+                <p class="mt-3">Não possui cadastro? <a href="#" id="signUp" style="color: white;">Clique aqui</a></p>
+            </form>
+        </div>
+
+        <!-- Área da Imagem e Overlay -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <img src="../Img/Login/BuffetLogin.png" alt="Imagem do Buffet" class="image-bg">
+            </div>
+        </div>
+    </div>
+
+    <script src="../Login/Login.js"></script>
+</body>
+</html>

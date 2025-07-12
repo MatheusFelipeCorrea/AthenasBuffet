@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Menu</title>
+  <link rel="stylesheet" href="Menu.css">
+  <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-logo">
+      <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas">
+    </div>
+    <h2>FORMULÁRIO DE MENU</h2>
+
+    <div class="scrollable-container">
+      <form id="menuForm">
+        <div class="form-group">
+            <label>Sobremesa*</label>
+            <textarea name="sobremesa" placeholder="Ex: Pudim, Torta de Limão" rows="3" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label>Prato Principal*</label>
+            <textarea name="prato_principal" placeholder="Ex: Filé ao molho madeira, Bacalhau" rows="3" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label>Acompanhamento*</label>
+            <textarea name="acompanhamento" placeholder="Ex: Arroz à grega, Batata gratinada" rows="3" required></textarea>
+          </div>          
+
+          <div class="form-group">
+            <label>Bebidas</label>
+            <textarea name="bebidas" placeholder="Ex: Refrigerante, Suco, Vinho" rows="3"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label>Entrada</label>
+            <textarea name="entrada" placeholder="Ex: Canapés, Salada Caesar" rows="3"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label>Opções Vegetarianas</label>
+            <textarea name="vegetariano" placeholder="Ex: Lasanha de berinjela, Quiche de legumes" rows="3"></textarea>
+          </div>
+          
+
+        <div class="form-group">
+          <label>Orçamento Máximo</label>
+          <input type="number" name="orcamento_maximo" placeholder="Digite o valor em R$">
+        </div>
+
+        <div class="form-group">
+          <label>Observações</label>
+          <textarea name="observacoes" rows="4" placeholder="Informe qualquer preferência ou detalhe adicional"></textarea>
+        </div>
+
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+    <script src="Menu.js"></script>
+  </div>
+</body>
+</html>

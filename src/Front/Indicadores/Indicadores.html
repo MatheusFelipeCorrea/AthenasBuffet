@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenas Buffet - Indicadores</title>
+    <link rel="stylesheet" href="Indicadores.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="logo">
+        </header>
+
+        <main>
+            <div class="grafico-container">
+                <div class="grafico">
+                    <h2>Orçamentos Aceitos vs Outros</h2>
+                    <canvas id="graficoOrcamentos"></canvas>
+                    <div id="orcamentos-porcentagem"></div>
+                    <div id="orcamentos-total" class="total"></div>
+                </div>
+                <div class="grafico">
+                    <h2>Vagas com e Sem Candidaturas</h2>
+                    <canvas id="graficoCandidaturas"></canvas>
+                    <div id="candidaturas-porcentagem"></div>
+                    <div id="candidaturas-total" class="total"></div>
+                </div>
+                <div class="grafico">
+                    <h2>Avaliações: Maiores que 3 vs Menores ou Iguais</h2>
+                    <canvas id="graficoAvaliacoes"></canvas>
+                    <div id="avaliacoes-porcentagem"></div>
+                    <div id="avaliacoes-total" class="total"></div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="footer-logo">
+            <p>Pronto para o Evento dos Seus Sonhos?</p>
+            <p>Entre em contato e deixe-nos transformar seu momento em uma celebração inesquecível!</p>
+            <div class="footer-links">
+                <a href="#">Sobre o Athenas</a>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Depoimento</a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="Indicadores.js"></script>
+</body>
+</html>

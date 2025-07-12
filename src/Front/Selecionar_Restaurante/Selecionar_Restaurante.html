@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenas Buffet</title>
+    <link rel="stylesheet" href="Selecionar_Restaurante.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+
+    <header class="header">
+        <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="logo">
+        <h1>Bem Vindo(a)!</h1>
+        <p>Selecione um dos Buffets abaixo!</p>
+    </header>
+
+    <section class="search-section">
+        <input type="text" placeholder="Pesquisar um Buffet" class="search-bar">
+        <button class="search-button">🔍</button>
+    </section>
+
+    <!-- Seção para carregar dinamicamente os buffets -->
+    <section id="buffet-list" class="buffet-list"></section>
+
+    <button class="load-more">Mais Buffets</button>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-left">
+            <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Athenas" class="footer-logo">
+            <div class="footer-icons">
+              <a href="#" class="icon-button"><img src="../Img/Home/whatsapp.svg" alt="WhatsApp" class="icon"></a>
+              <a href="#" class="icon-button"><img src="../Img/Home/mail.svg" alt="Email" class="icon"></a>
+              <a href="https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-atenasbuffet/tree/main" class="icon-button"><img src="../Img/Home/github (2).svg" alt="Github" class="icon"></a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <h2>Pronto para o Evento dos</h2>
+            <h2> seus Sonhos?</h2>
+            <p class="frase">Entre em contato e deixe-nos transformar</p>
+            <p class="frase"> seu evento em uma realidade!</p>
+          </div>
+          <div class="footer-right">
+            <ul>
+              <li><a href="#sobre">Sobre o Athenas</a></li>
+              <li><a href="#servicos">Nossos Serviços</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Incluindo o arquivo JavaScript -->
+    <script src="Selecionar_Restaurante.js"></script>
+</body>
+</html>

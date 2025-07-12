@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Evento</title>
+  <link rel="stylesheet" href="formulario.css">
+  <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-logo">
+      <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas">
+    </div>
+    <h2>FORMULÁRIO COM OS DADOS DO EVENTO</h2>
+
+    <div class="scrollable-container">
+      <form id="eventForm">
+        <div class="form-group">
+          <label>Identificador</label>
+          <div class="radio-group">
+            <label><input type="radio" name="tipo" value="Casamento"> Casamento</label>
+            <label><input type="radio" name="tipo" value="Formatura"> Formatura</label>
+            <label><input type="radio" name="tipo" value="Aniversário"> Aniversário</label>
+            <label><input type="radio" name="tipo" value="Corporativo"> Corporativo</label>
+            <label><input type="radio" name="tipo" value="Outros"> Outros</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Data*</label>
+          <input type="date" name="data" required>
+        </div>
+
+        <div class="form-group">
+          <label>Horário*</label>
+          <input type="time" name="horario" required>
+        </div>
+
+        <div class="form-group">
+          <label>Duração do Evento</label>
+          <input type="time" name="duracao"> <!-- Alterado para tipo "time" -->
+        </div>
+
+        <!-- Grupo Número de Convidados e CEP -->
+        <div class="form-group flex-group">
+          <div class="half-width">
+            <label>Número de Convidados</label>
+            <input type="number" name="convidados">
+          </div>
+          <div class="half-width">
+            <label>CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="00000-000" onblur="buscarEndereco()">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro">
+        </div>
+
+        <!-- Grupo Número e Complemento -->
+        <div class="form-group flex-group">
+          <div class="half-width">
+            <label>Número</label>
+            <input type="text" name="numero">
+          </div>
+          <div class="half-width">
+            <label>Complemento</label>
+            <input type="text" name="complemento">
+          </div>
+        </div>
+
+        <!-- Grupo Estado e Bairro -->
+        <div class="form-group flex-group">
+          <div class="half-width">
+            <label>Estado</label>
+            <input type="text" id="estado" name="estado">
+          </div>
+          <div class="half-width">
+            <label>Bairro</label>
+            <input type="text" id="bairro" name="bairro">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Cidade</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+       
+        <div class="form-group">
+          <label>Precisa de Algum Equipamento/ Estrutura?</label>
+          <input type="text" name="equipamento">
+        </div>
+        
+        <div class="form-group">
+          <label>Orçamento Máximo</label>
+          <input type="number" name="orcamento_maximo">
+        </div>
+         
+        <!-- Precisa de Orçamento para Menu -->
+        <div class="form-group">
+          <label>Precisa de Orçamento para Menu?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="orcamento_menu" value="Sim"> Sim</label>
+            <label><input type="radio" name="orcamento_menu" value="Não"> Não</label>
+          </div>
+        </div>
+        
+        <!-- Outros Serviços com múltiplas opções -->
+        <div class="form-group">
+          <label>Outros Serviços</label>
+          <div class="checkbox-group horizontal-options">
+            <label><input type="checkbox" name="outros_servicos" value="Manobrista"> Manobrista</label>
+            <label><input type="checkbox" name="outros_servicos" value="Segurança"> Segurança</label>
+            <label><input type="checkbox" name="outros_servicos" value="Fotografia e filmagem"> Fotografia e filmagem</label>
+            <label><input type="checkbox" name="outros_servicos" value="Outros"> Outros</label>
+            <label><input type="checkbox" name="outros_servicos" value="Limpeza"> Limpeza</label>
+          </div>
+        </div>
+        
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+    <script src="formulario.js"></script>
+  </div>
+</body>
+</html>

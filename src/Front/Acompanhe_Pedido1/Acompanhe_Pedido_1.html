@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenas Buffet - Acompanhe seus pedidos</title>
+    <link rel="stylesheet" href="Acompanhe_Pedido_1.css">
+    <link rel="icon" type="image/x-icon" href="../Img/Athenas-Buffet-Logo.ico">
+</head>
+<body>
+    <header>
+        <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="logo">
+        <h1>Bem Vindo(a)!</h1>
+    </header>
+    
+    <div class="content">
+        <div class="search-and-form">
+            <div class="search-section">
+                <input type="text" id="searchBar" placeholder="Davi">
+                <button id="searchButton" onclick="search()">🔍</button>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="formOption" onclick="showForm('event')"> Formulários de Evento
+                    </label>
+                    <label>
+                        <input type="radio" name="formOption" onclick="showForm('menu')"> Formulários de Menu
+                    </label>
+                    <label>
+                        <input type="radio" name="formOption" onclick="showForm('candidatos')"> Vagas e Candidatos
+                    </label>
+                </div>
+                <button class="relatorios-button" onclick="window.location.href='../Indicadores/Indicadores.html'">📊 Relatórios</button>
+                <!-- Botão de Avaliações -->
+                <button class="avaliacoes-button" onclick="redirectToFeedback()">⭐ Ver Avaliações</button>
+            </div>
+
+            <div id="formEvent" class="form-box hidden">
+                <h2>Eventos:</h2>
+                <div id="eventosContainer"></div> <!-- Container para os eventos -->
+            </div>
+
+            <div id="formMenu" class="form-box hidden">
+                <h2>Formulário de Menu</h2>
+                <div id="menusContainer"></div> <!-- Adicionado para exibir os menus -->
+            </div>            
+
+            <div id="formCandidatos" class="form-box hidden">
+                <button onclick="window.location.href='../FormularioVaga/FormularioVaga.html'" class="publicar-vagas-button">Publicar Vagas</button>
+                <div id="candidatosContainer"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <img src="../Img/Athenas Buffet Logo.svg" alt="Logo Atenas" class="footer-logo">
+        <p>Pronto para o Evento dos Seus Sonhos?</p>
+        <p>Entre em contato e deixe-nos transformar seu momento em uma celebração inesquecível!</p>
+        <div class="footer-links">
+            <a href="#">Sobre o Athenas</a>
+            <a href="#">Nossos Serviços</a>
+            <a href="#">Depoimento</a>
+        </div>
+    </footer>
+
+    <script>
+        // Redireciona para a página de avaliações com o ID do buffet logado
+        function redirectToFeedback() {
+            const userId = localStorage.getItem('userId');
+            if (!userId) {
+                alert("Erro: ID do buffet não encontrado. Por favor, faça login.");
+                return;
+            }
+            window.location.href = `../VISUALIZAR_FEEDBACK/VISUALIZAR_FEEDBACK/Visualizar_Feedback.html?idBuffet=${userId}`;
+        }
+    </script>
+    <script src="Acompanhe_Pedido_1.js"></script>
+</body>
+</html>
